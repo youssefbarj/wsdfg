@@ -4,15 +4,6 @@ export default function LEDPhotomodulationPage() {
   return (
     <div className="min-h-screen pb-12" style={{ backgroundColor: "#E6D9FF" }}>
       <div className="container mx-auto">
-        {/* Header */}
-        <header className="text-center mb-6">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4 text-balance">
-            Contre-indications à la Luminothérapie LED
-          </h1>
-          <p className="text-lg text-gray-700 max-w-4xl mx-auto leading-relaxed">
-            Vérification de sécurité obligatoire avant traitement
-          </p>
-        </header>
 
         {/* Contraindications Grid */}
         <LEDPhotomodulationContraindications />
@@ -32,9 +23,8 @@ export default function LEDPhotomodulationPage() {
             </div>
             <div className="ml-3">
               <p className="text-red-700">
-                En tant que professionnel, il est de votre responsabilité de détecter ces contre-indications lors de la
-                consultation préalable pour assurer la sécurité de vos clients lors des traitements de luminothérapie
-                LED.
+                As a professional, it is your responsibility to detect these contraindications during the prior
+                consultation to ensure the safety of your clients during LED phototherapy treatments.
               </p>
             </div>
           </div>

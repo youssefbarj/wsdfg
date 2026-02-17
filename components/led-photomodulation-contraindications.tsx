@@ -6,51 +6,51 @@ import Image from "next/image"
 const contraindications = [
   {
     id: 1,
-    title: "TROUBLES DE LA THYROÏDE",
+    title: "THYROID DISORDERS",
     image: "/images/thyroid-issues.png",
     description:
-      "Précaution particulière pour les LED proches du cou. Risque d'interférence avec la fonction thyroïdienne. Les traitements LED près de la zone thyroïdienne peuvent potentiellement affecter cette glande sensible.",
-    category: "Endocrinologie",
+      "Special precaution for LED near the neck. Risk of interference with thyroid function. LED treatments near the thyroid area may potentially affect this sensitive gland.",
+    category: "Endocrinology",
   },
   {
     id: 2,
-    title: "GROSSESSE ET ALLAITEMENT",
+    title: "PREGNANCY AND BREASTFEEDING",
     image: "/images/pregnancy-led.png",
     description:
-      "Par précaution absolue, même si aucun effet nocif n'est scientifiquement prouvé. Période sensible à éviter. Les changements hormonaux peuvent modifier la réponse cutanée aux traitements LED.",
-    category: "Maternité",
+      "As an absolute precaution, even though no harmful effects have been scientifically proven. Sensitive period to avoid. Hormonal changes may alter skin response to LED treatments.",
+    category: "Maternity",
   },
   {
     id: 3,
-    title: "PLAIES OUVERTES OU INFECTIONS",
+    title: "OPEN WOUNDS OR INFECTIONS",
     image: "/images/open-wounds-infections.png",
     description:
-      "Infections actives, inflammations aiguës, ou blessures non cicatrisées sur la zone de traitement. La lumière LED peut aggraver l'inflammation et retarder la guérison des tissus compromis.",
-    category: "Dermatologie",
+      "Active infections, acute inflammations, or unhealed wounds in the treatment area. LED light may worsen inflammation and delay healing of compromised tissues.",
+    category: "Dermatology",
   },
   {
     id: 4,
-    title: "MÉDICAMENTS PHOTOSENSIBILISANTS",
+    title: "PHOTOSENSITIZING MEDICATIONS",
     image: "/images/photosensitizing-medications.png",
     description:
-      "Traitements rendant la peau sensible à la lumière. Risque de réaction cutanée amplifiée. Les antibiotiques, rétinoïdes et certains antidépresseurs peuvent causer des brûlures sous LED.",
-    category: "Pharmacologie",
+      "Treatments that make skin sensitive to light. Risk of amplified skin reaction. Antibiotics, retinoids, and some antidepressants may cause burns under LED.",
+    category: "Pharmacology",
   },
   {
     id: 5,
-    title: "CHIRURGIE RÉCENTE",
+    title: "RECENT SURGERY",
     image: "/images/recent-surgery-led.png",
     description:
-      "Intervention chirurgicale récente sur la zone à traiter. Attendre cicatrisation complète. Les tissus en cours de guérison sont fragiles et peuvent mal réagir à la stimulation lumineuse.",
-    category: "Chirurgie",
+      "Recent surgical procedure on the area to be treated. Wait for complete healing. Healing tissues are fragile and may react poorly to light stimulation.",
+    category: "Surgery",
   },
   {
     id: 6,
-    title: "PACEMAKER/IMPLANTS ÉLECTRONIQUES",
+    title: "PACEMAKER/ELECTRONIC IMPLANTS",
     image: "/images/pacemaker-electronic-implants.png",
     description:
-      "Risque théorique d'interférence électromagnétique avec dispositifs médicaux actifs. Bien que rare, la prudence est recommandée pour éviter tout dysfonctionnement des appareils implantés.",
-    category: "Cardiologie",
+      "Theoretical risk of electromagnetic interference with active medical devices. Although rare, caution is recommended to avoid any malfunction of implanted devices.",
+    category: "Cardiology",
   },
 ]
 
@@ -117,7 +117,7 @@ export default function LEDPhotomodulationContraindications() {
           )}
 
           <div className="absolute top-4 right-4 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-full z-10 transition-transform duration-200 group-hover:scale-110">
-            ATTENTION
+            WARNING
           </div>
 
           <div className="relative h-64 overflow-hidden bg-gradient-to-br from-red-50 to-red-100">
@@ -155,7 +155,7 @@ export default function LEDPhotomodulationContraindications() {
                     />
                   </svg>
                 </div>
-                <h4 className="text-lg font-bold mb-2 text-white">Pourquoi cette contre-indication ?</h4>
+                <h4 className="text-lg font-bold mb-2 text-white">Why this contraindication?</h4>
               </div>
               <p className="text-sm leading-relaxed text-white text-opacity-90">{item.description}</p>
             </div>
